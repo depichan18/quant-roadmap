@@ -14,12 +14,16 @@ body {
 .app {
   min-height: 100vh;
   background: var(--gray-50);
+  padding-top: 0;
+  /* Remove padding since header is sticky */
 }
 
 .main-content {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem;
+  /* Add top padding to prevent content from being hidden under sticky header */
+  padding-top: 1rem;
 }
 
 .weeks-grid {
@@ -34,7 +38,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 0.75rem;
-  margin: 1.5rem auto;
+  margin: 1rem auto 1.5rem auto;
+  /* Reduced top margin since header is sticky */
   padding: 1rem;
   background: var(--white);
   border-radius: 12px;
@@ -42,6 +47,9 @@ body {
   max-width: 1000px;
   border: 1px solid var(--gray-200);
   flex-wrap: wrap;
+  position: relative;
+  z-index: 999;
+  /* Lower than header z-index (1000) */
 }
 
 .control-button {
@@ -61,6 +69,8 @@ body {
   gap: 0.5rem;
   position: relative;
   overflow: hidden;
+  z-index: 1;
+  /* Normal z-index, inherits from controls-bar */
 }
 
 .control-button::before {

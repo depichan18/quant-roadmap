@@ -85,6 +85,16 @@ function App() {
     }))
   }, [weeks])
 
+  // Update selectedWeek when weeks state changes (for task toggles)
+  useEffect(() => {
+    if (selectedWeek && weeks) {
+      const updatedWeek = weeks.find(week => week.id === selectedWeek.id)
+      if (updatedWeek) {
+        setSelectedWeek(updatedWeek)
+      }
+    }
+  }, [weeks, selectedWeek?.id])
+
   const toggleTask = (weekId, taskDay) => {
     setWeeks(prevWeeks =>
       prevWeeks.map(week => {
@@ -115,7 +125,7 @@ function App() {
     <div className="app">
       <Explorer onMenuSelect={handleMenuSelect} activeMenu={activeMenu} />
 
-      <Header title={roadmapData.title} description={roadmapData.description} />
+      <Header />
 
       <div className="controls-bar">
         <button
@@ -181,6 +191,7 @@ function App() {
       />
 
       <WeekModal
+        key={selectedWeek?.id || 'modal'}
         isOpen={showWeekModal}
         onClose={handleCloseWeekModal}
         week={selectedWeek}
