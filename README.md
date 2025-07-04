@@ -1,208 +1,211 @@
-# 🎯 Quant Researcher Learning Roadmap
+# �💙 Depichan's Kawaii Quant Journey 💙🌸
 
-A comprehensive 2-month learning tracker designed specifically for aspiring quantitative researchers. This interactive web application helps you stay on track with your quant finance journey through structured weekly learning modules.
+> *✨ A super cute and interactive learning tracker for aspiring quantitative researchers! ✨*
 
-## 🚀 Features
+Welcome to the most adorable quant learning experience ever created! 🎀 This magical pink-blue themed application will guide you through your 2-month journey to becoming a quantitative researcher with style and cuteness! 
 
-- **📊 Progress Tracking**: Visual progress indicators and completion percentages
-- **✅ Daily Task Checklist**: Mark tasks as completed with persistent storage
-- **📈 Learning Statistics**: Detailed analytics on your learning progress
-- **🍅 Pomodoro Timer**: Built-in study timer with break reminders
-- **📄 Export Progress**: Export your progress as JSON, CSV, or generate reports
-- **📱 Responsive Design**: Works seamlessly on desktop and mobile devices
-- **💾 Local Storage**: Your progress is automatically saved in your browser
+## 🎯✨ Kawaii Features ✨🎯
 
-## 📚 Curriculum Overview
+- **🌸 Progress Tracking**: Adorable circular progress indicators with pastel colors
+- **💖 Daily Task Checklist**: Cute checkboxes that sparkle when completed! 
+- **� Learning Statistics**: Beautiful analytics with motivational kawaii messages
+- **� Pomodoro Timer**: Sweet study timer with gentle notifications and pink gradients
+- **📄 Export Progress**: Export your journey as pretty JSON, CSV, or cute HTML reports
+- **🌈 Responsive Design**: Looks absolutely gorgeous on any device!
+- **💾 Local Storage**: Your progress is safely saved with magical localStorage powers
 
-### Week 1: Foundation - Mathematics & Statistics
-- Probability theory basics
-- Statistical distributions
-- Descriptive statistics
-- Central limit theorem
+## 🎀📚 Cute Curriculum Overview 📚🎀
 
-### Week 2: Linear Algebra & Calculus for Finance
-- Matrix operations
-- Eigenvalues and eigenvectors
-- Optimization techniques
-- Financial mathematics
+### 🌟 Week 1: Foundation - Mathematics & Statistics
+- 🔢 Probability theory basics (so mathematical!)
+- 📊 Statistical distributions (data is beautiful!)
+- 📈 Descriptive statistics (numbers tell stories!)
+- 🎯 Central limit theorem (the magic theorem!)
 
-### Week 3: Programming for Finance
-- Python for financial analysis
-- Pandas data manipulation
-- Financial APIs
-- Data visualization
+### 💫 Week 2: Linear Algebra & Calculus for Finance  
+- 🔢 Matrix operations (matrices are friends!)
+- ⚡ Eigenvalues and eigenvectors (the power duo!)
+- 🎯 Optimization techniques (finding the best!)
+- 💰 Financial mathematics (money math is fun!)
 
-### Week 4: Financial Markets & Instruments
-- Market structures
-- Financial instruments
-- Risk and return concepts
-- Portfolio fundamentals
+### 🌸 Week 3: Programming for Finance
+- 🐍 Python for financial analysis (sssso cool!)
+- 🐼 Pandas data manipulation (cute data pandas!)
+- 📡 Financial APIs (connecting to the world!)
+- 📊 Data visualization (making data pretty!)
 
-### Week 5: Time Series Analysis
-- Time series components
-- Forecasting techniques
-- ARIMA models
-- Volatility modeling
+### 💖 Week 4: Financial Markets & Instruments
+- 🏢 Market structures (how markets work!)
+- 💼 Financial instruments (tools of the trade!)
+- ⚖️ Risk and return concepts (balance is key!)
+- 📈 Portfolio fundamentals (building wealth!)
 
-### Week 6: Portfolio Theory & Risk Management
-- Modern Portfolio Theory
-- CAPM model
-- Risk metrics (VaR, Sharpe ratio)
-- Portfolio optimization
+### 🌈 Week 5: Time Series Analysis
+- ⏰ Time series components (time is magical!)
+- 🔮 Forecasting techniques (predicting the future!)
+- 📊 ARIMA models (time series superstars!)
+- 📈 Volatility modeling (taming the chaos!)
 
-### Week 7: Basic Trading Strategies
-- Algorithmic trading concepts
-- Mean reversion strategies
-- Momentum strategies
-- Backtesting frameworks
+### 🎊 Week 6: Portfolio Theory & Risk Management
+- 💎 Modern Portfolio Theory (the classic!)
+- 📊 CAPM model (risk and return BFFs!)
+- 🛡️ Risk metrics (VaR, Sharpe ratio - the guardians!)
+- 🎯 Portfolio optimization (the perfect balance!)
 
-### Week 8: Introduction to Quantitative Research
-- Research methodologies
-- Factor modeling
-- Academic paper analysis
-- Research presentation skills
+### 🚀 Week 7: Basic Trading Strategies
+- 🤖 Algorithmic trading concepts (robots trading!)
+- 📊 Mean reversion strategies (what goes up...)
+- 🏃‍♀️ Momentum strategies (riding the wave!)
+- 📚 Backtesting frameworks (testing the past!)
 
-## 🛠️ Technology Stack
+### 🌟 Week 8: Introduction to Quantitative Research
+- 🔬 Research methodologies (science is fun!)
+- 📊 Factor modeling (finding the factors!)
+- 📖 Academic paper analysis (reading like a pro!)
+- 🎤 Research presentation skills (sharing is caring!)
 
-- **Frontend**: React 19.x with Vite
-- **Styling**: Pure CSS with modern design patterns
-- **Data Storage**: Browser's localStorage
-- **Build Tool**: Vite for fast development and building
+## 🛠️✨ Kawaii Technology Stack ✨🛠️
 
-## 🚦 Getting Started
+- **🌸 Frontend**: React 19.x with Vite (super fast and cute!)
+- **🎨 Styling**: Pure CSS with pastel pink-blue gradients
+- **💾 Data Storage**: Browser's localStorage (keeping things local!)
+- **⚡ Build Tool**: Vite for lightning-fast development
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+## 🚦🌸 Getting Started (The Cute Way!) 🌸🚦
 
-### Installation
+### 💖 Prerequisites
+- Node.js (v16 or higher) 🟢
+- npm or yarn 📦
+- A love for cute things! 💕
 
-1. Clone the repository:
+### 🎯 Installation Steps
+
+1. **Clone this adorable repository**:
 ```bash
 git clone <repository-url>
 cd quant-roadmap
 ```
 
-2. Install dependencies:
+2. **Install the magical dependencies**:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+3. **Start the kawaii development server**:
 ```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+4. **Open your browser and visit**: `https://depichan18.github.io/quant-roadmap/` 🌈
 
-### Building for Production
+### 🏗️ Building for Production
 
 ```bash
 npm run build
 ```
 
-The built files will be in the `dist/` directory.
+Your beautifully built files will be in the `dist/` directory! ✨
 
-## 📖 How to Use
+## 📖🎀 How to Use (Step by Step Cuteness!) 🎀📖
 
-1. **Track Daily Tasks**: Click on checkboxes to mark tasks as completed
-2. **View Progress**: Monitor your overall progress in the header section
-3. **Study Timer**: Use the Pomodoro timer for focused study sessions
-4. **Statistics**: View detailed analytics about your learning journey
-5. **Export Data**: Save your progress in various formats
-6. **Reset Progress**: Start fresh anytime with the reset button
+1. **🌸 Track Daily Tasks**: Click on those adorable checkboxes to mark tasks as completed
+2. **📊 View Progress**: Watch your progress bloom in the header section
+3. **🍓 Study Timer**: Use the kawaii Pomodoro timer for focused study sessions
+4. **📈 Statistics**: View your learning journey with cute analytics
+5. **📄 Export Data**: Save your progress in pretty formats
+6. **🔄 Reset Progress**: Start fresh anytime with a gentle reset
 
-## 🎨 Features in Detail
+## 🎨💖 Kawaii Features in Detail 💖🎨
 
-### Progress Tracking
-- Real-time progress calculation
-- Visual circular progress indicators
-- Week-by-week completion tracking
-- Motivational messages based on progress
+### 🌸 Progress Tracking
+- ✨ Real-time progress calculation with sparkles
+- 🎀 Adorable circular progress indicators in pastel colors
+- 📊 Week-by-week completion tracking with cute animations
+- 💕 Motivational kawaii messages based on your progress
 
-### Study Timer
-- 25-minute study sessions
-- 5-minute break periods
-- Visual countdown with circular progress
-- Desktop notifications when sessions complete
-- Automatic session switching
+### 🍓 Study Timer
+- ⏰ 25-minute study sessions (perfect for focus!)
+- 🛀 5-minute break periods (time to relax!)
+- 🎯 Visual countdown with beautiful circular progress
+- 🔔 Gentle desktop notifications when sessions complete
+- 🔄 Automatic session switching (so convenient!)
 
-### Export Options
-- **JSON**: Complete data export for backup
-- **CSV**: Spreadsheet-friendly format
-- **Report**: Formatted HTML report for printing
+### 📄 Export Options
+- **🌸 JSON**: Complete data export for backup (so organized!)
+- **📊 CSV**: Spreadsheet-friendly format (for the data lovers!)
+- **📋 Report**: Pretty HTML report for printing (share your journey!)
 
-### Statistics Dashboard
-- Total tasks completed
-- Weeks finished
-- Current week indicator
-- Average weekly progress
-- Motivational feedback
+### 📈 Statistics Dashboard
+- ✅ Total tasks completed (your achievements!)
+- 🏆 Weeks finished (milestone tracker!)
+- 📍 Current week indicator (where you are now!)
+- 📊 Average weekly progress (your consistency!)
+- 💖 Motivational kawaii feedback (you're doing great!)
 
-## 🔧 Customization
+## 🔧🌈 Customization (Make It Your Own!) 🌈🔧
 
-### Modifying the Roadmap
+### 🎯 Modifying the Roadmap
 Edit `src/data/roadmapData.json` to customize:
-- Week titles and descriptions
-- Learning objectives
-- Daily tasks
-- Resources and materials
-- Tools and technologies
+- 📝 Week titles and descriptions
+- 🎯 Learning objectives  
+- ✅ Daily tasks
+- 📚 Resources and materials
+- 🛠️ Tools and technologies
 
-### Styling
-- Modify component CSS files in `src/components/`
-- Update global styles in `src/App.css` and `src/index.css`
-- Color schemes are defined with CSS custom properties
+### 🎨 Styling
+- 💄 Modify component CSS files in `src/components/`
+- 🌈 Update global styles in `src/App.css` and `src/index.css`
+- 🎨 Color schemes use CSS custom properties (easy to change!)
 
-## 📱 Mobile Responsive
+## 📱💕 Mobile Responsive (Cute on Every Device!) 💕📱
 
-The application is fully responsive and works well on:
-- Desktop computers
-- Tablets
-- Mobile phones
-- Different screen orientations
+The app looks absolutely kawaii on:
+- 🖥️ Desktop computers
+- 📱 Tablets  
+- 📲 Mobile phones
+- 🔄 Different screen orientations
 
-## 🔐 Data Privacy
+## 🔐🛡️ Data Privacy (Your Secrets Are Safe!) 🛡️🔐
 
-- All data is stored locally in your browser
-- No external servers or databases
-- Your progress is private and secure
-- Export options allow you to backup your data
+- 🏠 All data stored locally in your browser
+- 🚫 No external servers or databases
+- 🔒 Your progress is private and secure
+- 📦 Export options for easy backup
 
-## 🤝 Contributing
+## 🤝💕 Contributing (Join the Kawaii Community!) 💕🤝
 
-This project is designed as a learning tool. Feel free to:
-- Fork the repository
-- Add new features
-- Improve the curriculum
-- Enhance the UI/UX
-- Fix bugs or issues
+This project is designed as a super cute learning tool! Feel free to:
+- 🍴 Fork the repository (sharing is caring!)
+- ✨ Add new kawaii features
+- 📚 Improve the curriculum content
+- 🎨 Enhance the UI/UX with more cuteness
+- 🐛 Fix bugs or issues (be a hero!)
 
-## 📄 License
+## 📄🌸 License 🌸📄
 
-This project is open source and available under the MIT License.
+This project is open source and available under the MIT License. Free to use and modify! 💖
 
-## 🎓 About the Creator
+## 🎓💫 About the Creator 💫🎓
 
-Created by **Devi Rosa Aprilla**, a Mathematics student at Institut Teknologi Sepuluh Nopember (ITS), as a learning tool for aspiring quantitative researchers.
+Created with lots of love by **Depichan (Devi Rosa Aprilla)** 💕, a Mathematics student at Institut Teknologi Sepuluh Nopember (ITS), as the most adorable learning tool for aspiring quantitative researchers! 
 
-## 📞 Support
+*"Learning should be fun, cute, and inspiring!" - Depichan* 🌸
 
-If you encounter any issues or have suggestions for improvement, please feel free to create an issue or reach out.
+## 📞🌈 Support & Contact 🌈📞
+
+If you encounter any issues or have suggestions to make this even more kawaii, please feel free to:
+- 🐛 Create an issue on GitHub
+- 💌 Reach out with your ideas
+- 🌟 Star this repo if you love it!
 
 ---
 
-**Happy Learning! 🚀📊**
+## 🎉✨ Happy Kawaii Learning! ✨🎉
 
-*Remember: Becoming a quantitative researcher requires dedication, continuous learning, and practical application. This roadmap is your guide, but your commitment is the key to success.*+ Vite
+*Remember: Becoming a quantitative researcher is a magical journey that requires dedication, continuous learning, and practical application. This adorable roadmap is your guide, but your commitment and cute determination are the keys to success!* 🌸💙
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Keep being awesome, keep being cute, and keep learning! You've got this! 🌟💖**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*Made with 💖 and lots of kawaii energy by Depichan!*

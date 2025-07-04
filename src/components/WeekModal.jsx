@@ -133,7 +133,7 @@ const WeekModal = ({ isOpen, onClose, week, onToggleTask }) => {
               ></div>
               <span className="progress-text-modal">{progressPercentage}%</span>
             </div>
-            <span className="progress-stats-modal">{completedTasks}/{totalTasks} tasks 💖</span>
+            <span className="progress-stats-modal">{completedTasks}/{totalTasks} tasks💖</span>
           </div>
           <button className="close-modal-button" onClick={onClose}>
             🌸

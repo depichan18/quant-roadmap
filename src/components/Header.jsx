@@ -18,13 +18,11 @@ const Header = () => {
       setOverlayOpacity(prev => {
         const newOpacity = Math.sin(Date.now() * 0.002) * 0.4 + 0.4
         const finalOpacity = Math.max(0.2, Math.min(0.8, newOpacity))
-        console.log('Overlay 1 opacity:', finalOpacity)
         return finalOpacity
       })
       setSecondOverlayOpacity(prev => {
         const newOpacity = Math.cos(Date.now() * 0.0015) * 0.3 + 0.3
         const finalOpacity = Math.max(0.1, Math.min(0.6, newOpacity))
-        console.log('Overlay 2 opacity:', finalOpacity)
         return finalOpacity
       })
     }, 100)
@@ -60,11 +58,13 @@ const Header = () => {
           className={`header-title ${isAnimating ? 'bounce' : ''}`}
           onClick={handleTitleClick}
         >
-          💕 Depichan's Journey 💕
+          Depichan's Journey 💕
         </h1>
 
+        <div className="title-underline"></div>
+
         <p className="header-subtitle">
-          🎀 Road to Become Quant Researcher 🎀
+          🎀 Road to Become Quant Researcher
         </p>
       </div>
     </header>
