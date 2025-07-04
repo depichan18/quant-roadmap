@@ -12,66 +12,108 @@ const WeekModal = ({ isOpen, onClose, week, onToggleTask }) => {
   const weekIcon = weekIcons[week.id - 1] || '💫'
 
   const createClickableLink = (text) => {
-    // Simple URL detection for YouTube and websites
-    if (text.toLowerCase().includes('youtube') || text.toLowerCase().includes('khan academy') || text.toLowerCase().includes('coursera')) {
-      if (text.toLowerCase().includes('youtube')) {
-        const searchQuery = text.replace(/youtube/gi, '').trim()
-        return (
-          <a
-            href={`https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resource-link youtube"
-          >
-            🎥 {text}
-          </a>
-        )
-      }
-      if (text.toLowerCase().includes('khan academy')) {
-        return (
-          <a
-            href="https://www.khanacademy.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resource-link website"
-          >
-            🌐 {text}
-          </a>
-        )
-      }
-      if (text.toLowerCase().includes('coursera')) {
-        return (
-          <a
-            href="https://www.coursera.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resource-link website"
-          >
-            🌐 {text}
-          </a>
-        )
-      }
-    }
-
-    // Common websites
-    const websiteKeywords = ['website', 'site', 'online', 'web', 'blog', 'github', 'stackoverflow']
-    const hasWebsiteKeyword = websiteKeywords.some(keyword =>
-      text.toLowerCase().includes(keyword)
-    )
-
-    if (hasWebsiteKeyword || text.toLowerCase().includes('.com') || text.toLowerCase().includes('www.')) {
+    // YouTube link detection
+    if (text.toLowerCase().includes('youtube')) {
+      const searchQuery = text.replace(/youtube/gi, '').trim()
       return (
         <a
-          href={`https://www.google.com/search?q=${encodeURIComponent(text)}`}
+          href={`https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="resource-link website"
+          className="resource-link-plain"
         >
-          🌐 {text}
+          📚 {text}
         </a>
       )
     }
 
+    // Specific website detection
+    if (text.toLowerCase().includes('khan academy')) {
+      return (
+        <a
+          href="https://www.khanacademy.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resource-link-plain"
+        >
+          📚 {text}
+        </a>
+      )
+    }
+
+    if (text.toLowerCase().includes('coursera')) {
+      return (
+        <a
+          href="https://www.coursera.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resource-link-plain"
+        >
+          📚 {text}
+        </a>
+      )
+    }
+
+    // GitHub link detection
+    if (text.toLowerCase().includes('github')) {
+      return (
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resource-link-plain"
+        >
+          📚 {text}
+        </a>
+      )
+    }
+
+    // Stack Overflow link detection
+    if (text.toLowerCase().includes('stackoverflow')) {
+      return (
+        <a
+          href="https://stackoverflow.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resource-link-plain"
+        >
+          📚 {text}
+        </a>
+      )
+    }
+
+    // General website detection
+    const websiteKeywords = ['website', 'site', 'online', 'web', 'blog']
+    const hasWebsiteKeyword = websiteKeywords.some(keyword =>
+      text.toLowerCase().includes(keyword)
+    )
+
+    // Direct URL detection
+    if (text.includes('.com') || text.includes('.org') || text.includes('.net') || text.includes('www.') || hasWebsiteKeyword) {
+      // Try to extract or construct proper URL
+      let url = text
+      if (!url.startsWith('http')) {
+        if (url.includes('www.')) {
+          url = `https://${url}`
+        } else {
+          // For general searches, use Google search
+          url = `https://www.google.com/search?q=${encodeURIComponent(text)}`
+        }
+      }
+
+      return (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resource-link-plain"
+        >
+          📚 {text}
+        </a>
+      )
+    }
+
+    // Default for books and other resources
     return <span>📚 {text}</span>
   }
 

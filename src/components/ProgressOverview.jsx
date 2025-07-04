@@ -49,7 +49,6 @@ const ProgressOverview = ({ progress, totalWeeks, onReset }) => {
           <button
             onClick={onReset}
             className="reset-button"
-            title="Reset all progress"
           >
             🔄 Reset Progress
           </button>

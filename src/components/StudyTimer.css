@@ -103,7 +103,7 @@
 }
 
 .primary-button {
-  background: linear-gradient(135deg, var(--pink-400) 0%, var(--blue-400) 100%);
+  background: var(--blue-400);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -118,14 +118,15 @@
 }
 
 .primary-button:hover {
+  background: var(--blue-500) !important;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 
 .secondary-button {
-  background: var(--gray-50);
-  color: var(--gray-600);
-  border: 1px solid var(--gray-200);
+  background: var(--pink-400);
+  color: white;
+  border: none;
   padding: 0.75rem 1rem;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -138,9 +139,36 @@
 }
 
 .secondary-button:hover {
-  background: var(--gray-100);
+  background: var(--pink-600);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+}
+
+/* Override untuk memastikan text putih di semua state untuk timer control buttons */
+.primary-button,
+.primary-button:hover,
+.primary-button:focus,
+.primary-button:active,
+.primary-button:visited {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.secondary-button,
+.secondary-button:hover,
+.secondary-button:focus,
+.secondary-button:active,
+.secondary-button:visited {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.primary-button:hover {
+  background: var(--blue-500) !important;
+}
+
+.secondary-button:hover {
+  background: var(--pink-400) !important;
 }
 
 @media (max-width: 768px) {

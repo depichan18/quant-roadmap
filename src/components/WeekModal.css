@@ -132,16 +132,17 @@
 
 .progress-circle-modal {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: conic-gradient(white 0deg,
-      white calc(var(--progress) * 3.6deg),
-      rgba(255, 255, 255, 0.3) calc(var(--progress) * 3.6deg),
-      rgba(255, 255, 255, 0.3) 360deg);
+  background: conic-gradient(var(--blue-500) 0deg,
+      var(--blue-500) calc(var(--progress) * 3.6deg),
+      var(--blue-200) calc(var(--progress) * 3.6deg),
+      var(--blue-200) 360deg);
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--blue-600);
 }
 
 .progress-circle-modal::before {
@@ -150,7 +151,7 @@
   width: 75%;
   height: 75%;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--pink-300) 0%, var(--blue-300) 100%);
+  background: var(--blue-100);
 }
 
 .progress-text-modal {
@@ -158,7 +159,7 @@
   z-index: 1;
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--blue-700);
   font-family: 'Inter', sans-serif;
 }
 
@@ -271,8 +272,8 @@
 }
 
 .tool-badge {
-  background: linear-gradient(135deg, var(--pink-300) 0%, var(--blue-300) 100%);
-  color: var(--white);
+  background: var(--pink-200);
+  color: var(--pink-600);
   padding: 0.4rem 1rem;
   border-radius: 20px;
   font-size: 0.875rem;
@@ -282,9 +283,24 @@
   transition: all 0.2s ease;
 }
 
+.tool-badge:nth-child(even) {
+  background: var(--blue-200);
+  color: var(--blue-600);
+}
+
 .tool-badge:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+}
+
+.tool-badge:nth-child(odd):hover {
+  background: var(--pink-300);
+  color: var(--pink-700);
+}
+
+.tool-badge:nth-child(even):hover {
+  background: var(--blue-300);
+  color: var(--blue-700);
 }
 
 .tasks-list {
@@ -444,6 +460,31 @@
   background: var(--pink-200);
   border-color: var(--pink-300);
   color: var(--pink-500);
+}
+
+/* Plain resource links - no background styling */
+.resource-link-plain {
+  display: inline-block;
+  color: var(--gray-600);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.resource-link-plain:hover {
+  color: var(--blue-500);
+  text-decoration: underline;
+}
+
+.resource-link-plain:visited {
+  color: var(--gray-600);
+}
+
+.resource-link-plain:visited:hover {
+  color: var(--blue-500);
 }
 
 @media (max-width: 768px) {

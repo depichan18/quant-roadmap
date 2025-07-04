@@ -133,9 +133,9 @@
 }
 
 .reset-button {
-  background: var(--pink-400);
-  color: var(--white);
-  border: none;
+  background: var(--pink-400) !important;
+  color: var(--white) !important;
+  border: none !important;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -145,12 +145,106 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  box-shadow: var(--shadow-sm);
+  position: relative;
 }
 
 .reset-button:hover {
-  background: var(--pink-300);
+  background: var(--pink-500) !important;
+  color: var(--white) !important;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+}
+
+.reset-button:focus {
+  background: var(--pink-500) !important;
+  color: var(--white) !important;
+  outline: 2px solid var(--pink-300);
+  outline-offset: 2px;
+}
+
+.reset-button:active {
+  background: var(--pink-600) !important;
+  color: var(--white) !important;
+  transform: translateY(0);
+}
+
+/* Reset button custom tooltip */
+.reset-button::before {
+  content: 'Reset all progress';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 12px;
+  padding: 0.5rem 0.75rem;
+  background: var(--gray-800);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.reset-button:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+.reset-button::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 6px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--gray-800);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.reset-button:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+/* Tambahan override untuk semua state reset button */
+.progress-actions .reset-button {
+  background: var(--pink-400) !important;
+  color: var(--white) !important;
+  border: none !important;
+}
+
+.progress-actions .reset-button:hover {
+  background: var(--pink-500) !important;
+  color: var(--white) !important;
+}
+
+.progress-actions .reset-button:focus {
+  background: var(--pink-500) !important;
+  color: var(--white) !important;
+}
+
+.progress-actions .reset-button:active {
+  background: var(--pink-600) !important;
+  color: var(--white) !important;
 }
 
 @media (max-width: 768px) {

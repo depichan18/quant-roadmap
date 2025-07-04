@@ -9,12 +9,18 @@
   --pink-200: #F8C2CC;
   --pink-300: #F48FB1;
   --pink-400: #EC407A;
+  --pink-500: #E91E63;
+  --pink-600: #C2185B;
+  --pink-700: #AD1457;
 
   --blue-50: #F0F9FF;
   --blue-100: #E0F2FE;
   --blue-200: #BAE6FD;
   --blue-300: #7DD3FC;
   --blue-400: #38BDF8;
+  --blue-500: #0EA5E9;
+  --blue-600: #0284C7;
+  --blue-700: #0369A1;
 
   --gray-50: #F8FAFC;
   --gray-100: #F1F5F9;
@@ -23,6 +29,8 @@
   --gray-400: #94A3B8;
   --gray-500: #64748B;
   --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1E293B;
 
   --white: #FFFFFF;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -43,6 +51,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Override browser default tooltip styling */
+* {
+  /* This will help with tooltip visibility on some browsers */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global tooltip fix for better contrast */
+[title] {
+  /* Force tooltip to show with better contrast */
+  position: relative;
 }
 
 body {
@@ -128,6 +149,28 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+/* Override untuk button reset yang spesifik */
+.reset-button,
+.reset-button:hover,
+.reset-button:focus,
+.reset-button:active {
+  color: var(--white) !important;
+}
+
+.reset-button:hover {
+  background: var(--pink-500) !important;
+}
+
+.reset-button:focus {
+  background: var(--pink-500) !important;
+  outline: 2px solid var(--pink-300) !important;
+  outline-offset: 2px !important;
+}
+
+.reset-button:active {
+  background: var(--pink-600) !important;
+}
+
 /* Clean minimalist scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -192,4 +235,81 @@ button:focus-visible {
 
 .bg-blue {
   background-color: var(--blue-50);
+}
+
+/* Custom Tooltip Styling */
+/* Better approach: Use data-tooltip instead of title for custom tooltips */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  padding: 0.5rem 0.75rem;
+  background: var(--gray-800);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  opacity: 0;
+  animation: customTooltipFadeIn 0.2s ease-out forwards;
+}
+
+[data-tooltip]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--gray-800);
+  z-index: 1000;
+  opacity: 0;
+  animation: customTooltipFadeIn 0.2s ease-out forwards;
+}
+
+@keyframes customTooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Override untuk explorer toggle button */
+.explorer-toggle,
+.explorer-toggle:hover,
+.explorer-toggle:focus,
+.explorer-toggle:active,
+.explorer-toggle.active {
+  color: var(--white) !important;
+}
+
+.explorer-toggle:hover {
+  background: linear-gradient(135deg, var(--pink-400) 0%, var(--blue-400) 100%) !important;
+}
+
+.explorer-toggle.active {
+  background: var(--pink-400) !important;
+}
+
+.explorer-toggle.active:hover {
+  background: var(--pink-500) !important;
 }

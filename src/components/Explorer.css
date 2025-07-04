@@ -25,11 +25,20 @@
 .explorer-toggle:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
+  color: var(--white) !important;
+  background: linear-gradient(135deg, var(--pink-400) 0%, var(--blue-400) 100%);
 }
 
 .explorer-toggle.active {
-  background: var(--pink-400);
+  background: var(--pink-400) !important;
+  color: var(--white) !important;
   transform: scale(1.02);
+}
+
+.explorer-toggle.active:hover {
+  background: var(--pink-500) !important;
+  color: var(--white) !important;
+  transform: scale(1.02) translateY(-1px);
 }
 
 .toggle-icon {
@@ -97,11 +106,16 @@
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  color: var(--gray-500);
+  padding: 0.25rem;
+  border-radius: 4px;
 }
 
 .close-menu:hover {
   transform: rotate(180deg);
+  background: var(--gray-100);
+  color: var(--gray-600);
 }
 
 .menu-items {
@@ -163,6 +177,38 @@
   transform: translateX(2px);
   box-shadow: var(--shadow-sm);
   border-color: var(--pink-300);
+  background: var(--pink-100);
+  color: var(--pink-500);
+}
+
+.menu-item.pink:hover {
+  background: var(--pink-200);
+  color: var(--pink-600);
+  border-color: var(--pink-400);
+}
+
+.menu-item.blue:hover {
+  background: var(--blue-200);
+  color: var(--blue-600);
+  border-color: var(--blue-400);
+}
+
+.menu-item.purple:hover {
+  background: var(--pink-200);
+  color: var(--pink-600);
+  border-color: var(--pink-400);
+}
+
+.menu-item.green:hover {
+  background: var(--blue-200);
+  color: var(--blue-600);
+  border-color: var(--blue-400);
+}
+
+.menu-item.yellow:hover {
+  background: var(--pink-200);
+  color: var(--pink-600);
+  border-color: var(--pink-400);
 }
 
 .menu-item.active {
@@ -254,6 +300,15 @@
   .explorer-toggle {
     padding: 0.75rem 1rem;
     font-size: 0.9rem;
+    color: var(--white) !important;
+  }
+
+  .explorer-toggle:hover {
+    color: var(--white) !important;
+  }
+
+  .explorer-toggle.active {
+    color: var(--white) !important;
   }
 
   .explorer-menu {
