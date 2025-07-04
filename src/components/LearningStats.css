@@ -1,10 +1,10 @@
 .learning-stats {
-  background: linear-gradient(135deg, var(--kawaii-white) 0%, var(--kawaii-blue-light) 100%);
-  border-radius: 25px;
+  background: var(--white);
+  border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 6px 25px rgba(255, 182, 193, 0.3);
+  box-shadow: var(--shadow-md);
   margin: 2rem 0;
-  border: 3px solid var(--kawaii-pink-light);
+  border: 1px solid var(--gray-200);
   position: relative;
   overflow: hidden;
 }
@@ -40,11 +40,11 @@
 
 .learning-stats h3 {
   margin: 0 0 1.5rem 0;
-  color: var(--kawaii-text);
+  color: var(--gray-600);
   font-size: 1.4rem;
   text-align: center;
-  font-family: 'Comic Sans MS', cursive;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 .stats-grid {
@@ -55,42 +55,41 @@
 }
 
 .stat-card {
-  background: linear-gradient(135deg, var(--kawaii-cream) 0%, var(--kawaii-pink-light) 100%);
-  border-radius: 20px;
+  background: var(--gray-50);
+  border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
-  border: 2px solid var(--kawaii-pink);
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.2);
+  border: 1px solid var(--gray-200);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
 }
 
 .stat-card:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(255, 182, 193, 0.4);
-}
-
-.stat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--pink-300);
 }
 
 .stat-number {
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #667eea;
+  font-weight: 700;
+  color: var(--pink-400);
   margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .stat-label {
   font-size: 1rem;
   font-weight: 600;
-  color: #333;
+  color: var(--gray-600);
   margin-bottom: 0.25rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .stat-sublabel {
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  font-family: 'Inter', sans-serif;
 }
 
 .motivational-message {
@@ -106,27 +105,27 @@
 }
 
 .message.excellent {
-  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
-  color: #155724;
-  border: 1px solid #c3e6cb;
+  background: linear-gradient(135deg, var(--pink-100) 0%, var(--pink-200) 100%);
+  color: var(--pink-600);
+  border: 1px solid var(--pink-300);
 }
 
 .message.good {
-  background: linear-gradient(135deg, #cce5ff 0%, #b3d9ff 100%);
-  color: #004085;
-  border: 1px solid #b3d9ff;
+  background: linear-gradient(135deg, var(--blue-100) 0%, var(--blue-200) 100%);
+  color: var(--blue-600);
+  border: 1px solid var(--blue-300);
 }
 
 .message.okay {
-  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
-  color: #856404;
-  border: 1px solid #ffeaa7;
+  background: linear-gradient(135deg, var(--gray-100) 0%, var(--gray-200) 100%);
+  color: var(--gray-600);
+  border: 1px solid var(--gray-300);
 }
 
 .message.encourage {
-  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
-  color: #721c24;
-  border: 1px solid #f5c6cb;
+  background: linear-gradient(135deg, var(--pink-100) 0%, var(--pink-200) 100%);
+  color: var(--pink-600);
+  border: 1px solid var(--pink-300);
 }
 
 @media (max-width: 768px) {

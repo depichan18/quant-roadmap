@@ -1,24 +1,37 @@
 :root {
-  font-family: 'Comic Sans MS', cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
   font-weight: 400;
 
-  /* Kawaii Pink-Blue-White Color Theme */
-  --kawaii-pink: #FFB6C1;
-  --kawaii-pink-light: #FFE1E6;
-  --kawaii-pink-dark: #FF91A4;
-  --kawaii-blue: #B8E6FF;
-  --kawaii-blue-light: #E8F4FF;
-  --kawaii-blue-dark: #87CEEB;
-  --kawaii-white: #FFFFFF;
-  --kawaii-cream: #FFF8F0;
-  --kawaii-purple: #E6E6FA;
-  --kawaii-text: #4A4A4A;
-  --kawaii-text-light: #7A7A7A;
+  /* Ultra Minimal Kawaii Palette */
+  --pink-50: #FEF7F7;
+  --pink-100: #FDEDF2;
+  --pink-200: #F8C2CC;
+  --pink-300: #F48FB1;
+  --pink-400: #EC407A;
+
+  --blue-50: #F0F9FF;
+  --blue-100: #E0F2FE;
+  --blue-200: #BAE6FD;
+  --blue-300: #7DD3FC;
+  --blue-400: #38BDF8;
+
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+
+  --white: #FFFFFF;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 
   color-scheme: light;
-  color: var(--kawaii-text);
-  background-color: var(--kawaii-white);
+  color: var(--gray-600);
+  background-color: var(--white);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,7 +51,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--kawaii-pink-light) 0%, var(--kawaii-blue-light) 50%, var(--kawaii-cream) 100%);
+  background-color: var(--gray-50);
 }
 
 #root {
@@ -48,55 +61,135 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--gray-600);
+  margin-bottom: 1rem;
 }
 
 button {
-  border-radius: 20px;
-  border: 2px solid transparent;
-  padding: 0.7em 1.5em;
-  font-size: 0.9em;
-  font-weight: 600;
-  font-family: 'Comic Sans MS', cursive;
-  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 100%);
-  color: var(--kawaii-white);
+  border-radius: 8px;
+  border: 1px solid var(--gray-200);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--white);
+  color: var(--gray-600);
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 10px rgba(255, 182, 193, 0.3);
+  transition: all 0.15s ease;
+  box-shadow: var(--shadow-sm);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 }
 
+button.primary {
+  background-color: var(--pink-400);
+  color: var(--white);
+  border-color: var(--pink-400);
+}
+
+button.secondary {
+  background-color: var(--blue-400);
+  color: var(--white);
+  border-color: var(--blue-400);
+}
+
 button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.5);
-  background: linear-gradient(135deg, var(--kawaii-pink-dark) 0%, var(--kawaii-blue-dark) 100%);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+button:hover:not(.primary):not(.secondary) {
+  border-color: var(--pink-300);
+  background-color: var(--pink-50);
+}
+
+button.primary:hover {
+  background-color: var(--pink-300);
+  border-color: var(--pink-300);
+}
+
+button.secondary:hover {
+  background-color: var(--blue-300);
+  border-color: var(--blue-300);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
 }
 
 button:focus,
 button:focus-visible {
-  outline: 3px solid var(--kawaii-pink);
+  outline: 2px solid var(--blue-400);
   outline-offset: 2px;
 }
 
-/* Custom kawaii scrollbar */
+/* Clean minimalist scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--kawaii-pink-light);
-  border-radius: 10px;
+  background: var(--gray-100);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 100%);
-  border-radius: 10px;
-  border: 2px solid var(--kawaii-white);
+  background: var(--gray-300);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, var(--kawaii-pink-dark) 0%, var(--kawaii-blue-dark) 100%);
+  background: var(--pink-300);
+}
+
+/* Additional utility classes */
+.card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--pink-200);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background: var(--pink-100);
+  color: var(--pink-400);
+}
+
+.badge.blue {
+  background: var(--blue-100);
+  color: var(--blue-400);
+}
+
+.text-pink {
+  color: var(--pink-400);
+}
+
+.text-blue {
+  color: var(--blue-400);
+}
+
+.bg-pink {
+  background-color: var(--pink-50);
+}
+
+.bg-blue {
+  background-color: var(--blue-50);
 }

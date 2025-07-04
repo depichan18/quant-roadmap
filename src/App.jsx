@@ -119,19 +119,19 @@ function App() {
 
       <div className="controls-bar">
         <button
-          className={`control-button ${showStats ? 'active' : ''}`}
+          className={`control-button stats-button ${showStats ? 'active' : ''}`}
           onClick={() => setShowStats(!showStats)}
         >
           📊 {showStats ? 'Hide' : 'Show'} Statistics
         </button>
         <button
-          className={`control-button ${showTimer ? 'active' : ''}`}
+          className={`control-button timer-button ${showTimer ? 'active' : ''}`}
           onClick={() => setShowTimer(!showTimer)}
         >
           🍅 {showTimer ? 'Hide' : 'Show'} Study Timer
         </button>
         <button
-          className={`control-button ${showExport ? 'active' : ''}`}
+          className={`control-button export-button ${showExport ? 'active' : ''}`}
           onClick={() => setShowExport(!showExport)}
         >
           📄 {showExport ? 'Hide' : 'Show'} Export
@@ -143,7 +143,7 @@ function App() {
           ❓ Help & Guide
         </button>
         <button
-          className="control-button"
+          className="control-button reset-button-control"
           onClick={resetProgress}
         >
           🔄 Reset Progress

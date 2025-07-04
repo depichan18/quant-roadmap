@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 182, 193, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,14 +14,14 @@
 }
 
 .help-modal {
-  background: linear-gradient(135deg, var(--kawaii-white) 0%, var(--kawaii-cream) 100%);
-  border-radius: 25px;
+  background: var(--white);
+  border-radius: 12px;
   max-width: 850px;
   width: 100%;
   max-height: 90vh;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(255, 182, 193, 0.4);
-  border: 3px solid var(--kawaii-pink-light);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-200);
 }
 
 .help-modal-header {
@@ -29,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 100%);
+  background: linear-gradient(135deg, var(--pink-300) 0%, var(--blue-300) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -46,9 +46,9 @@
 }
 
 .help-modal-header h2 {
-  color: white;
-  font-family: 'Comic Sans MS', cursive;
-  font-weight: 700;
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   z-index: 1;
   position: relative;
   margin: 0;
@@ -58,8 +58,8 @@
 .close-button {
   background: none;
   border: none;
-  color: white;
-  font-size: 2rem;
+  color: var(--white);
+  font-size: 1.5rem;
   cursor: pointer;
   padding: 0;
   width: 40px;
@@ -68,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
 }
 
 .close-button:hover {
@@ -82,8 +82,8 @@
 }
 
 .help-tabs {
-  background: #f8f9fa;
-  border-right: 1px solid #dee2e6;
+  background: var(--gray-50);
+  border-right: 1px solid var(--gray-200);
   padding: 1rem 0;
   min-width: 180px;
 }
@@ -103,13 +103,13 @@
 }
 
 .help-tab:hover {
-  background: #e9ecef;
+  background: var(--gray-100);
 }
 
 .help-tab.active {
   background: white;
-  border-right: 3px solid #667eea;
-  color: #667eea;
+  border-right: 3px solid var(--pink-500);
+  color: var(--pink-500);
   font-weight: 600;
 }
 
@@ -129,7 +129,7 @@
 
 .help-section h3 {
   margin: 0 0 1.5rem 0;
-  color: #333;
+  color: var(--gray-600);
   font-size: 1.3rem;
 }
 
@@ -146,7 +146,7 @@
 }
 
 .step-number {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--pink-400) 0%, var(--blue-400) 100%);
   color: white;
   width: 30px;
   height: 30px;
@@ -161,13 +161,13 @@
 
 .step-content h4 {
   margin: 0 0 0.5rem 0;
-  color: #333;
+  color: var(--gray-600);
   font-size: 1.1rem;
 }
 
 .step-content p {
   margin: 0;
-  color: #666;
+  color: var(--gray-500);
   line-height: 1.5;
 }
 
@@ -178,11 +178,11 @@
 }
 
 .feature-card {
-  background: #f8f9fa;
+  background: var(--gray-50);
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
-  border: 1px solid #dee2e6;
+  border: 1px solid var(--gray-200);
 }
 
 .feature-icon {
@@ -192,13 +192,13 @@
 
 .feature-card h4 {
   margin: 0 0 0.5rem 0;
-  color: #333;
+  color: var(--gray-600);
   font-size: 1.1rem;
 }
 
 .feature-card p {
   margin: 0;
-  color: #666;
+  color: var(--gray-500);
   font-size: 0.9rem;
   line-height: 1.4;
 }
@@ -222,13 +222,13 @@
 
 .tip-content h4 {
   margin: 0 0 0.5rem 0;
-  color: #333;
+  color: var(--gray-600);
   font-size: 1.1rem;
 }
 
 .tip-content p {
   margin: 0;
-  color: #666;
+  color: var(--gray-500);
   line-height: 1.5;
 }
 
@@ -239,21 +239,21 @@
 }
 
 .faq-item {
-  background: #f8f9fa;
+  background: var(--gray-50);
   border-radius: 8px;
   padding: 1.5rem;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid var(--pink-500);
 }
 
 .faq-item h4 {
   margin: 0 0 0.75rem 0;
-  color: #333;
+  color: var(--gray-600);
   font-size: 1.1rem;
 }
 
 .faq-item p {
   margin: 0;
-  color: #666;
+  color: var(--gray-500);
   line-height: 1.5;
 }
 
@@ -269,7 +269,7 @@
     overflow-x: auto;
     padding: 1rem;
     border-right: none;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid var(--gray-200);
     min-width: auto;
   }
 
@@ -281,7 +281,7 @@
 
   .help-tab.active {
     border-right: none;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid var(--pink-500);
   }
 
   .help-content {

@@ -6,30 +6,30 @@
 }
 
 .explorer-toggle {
-  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 100%);
-  color: var(--kawaii-white);
+  background: linear-gradient(135deg, var(--pink-300) 0%, var(--blue-300) 100%);
+  color: var(--white);
   border: none;
-  border-radius: 25px;
-  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.4);
-  font-family: 'Comic Sans MS', cursive;
-  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-md);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .explorer-toggle:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(255, 182, 193, 0.6);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
 }
 
 .explorer-toggle.active {
-  background: linear-gradient(135deg, var(--kawaii-purple) 0%, var(--kawaii-pink) 100%);
-  transform: scale(1.05);
+  background: var(--pink-400);
+  transform: scale(1.02);
 }
 
 .toggle-icon {
@@ -54,11 +54,11 @@
   top: 100%;
   right: 0;
   margin-top: 1rem;
-  background: var(--kawaii-white);
-  border-radius: 20px;
+  background: var(--white);
+  border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 10px 40px rgba(255, 182, 193, 0.3);
-  border: 2px solid var(--kawaii-pink-light);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-200);
   min-width: 250px;
   animation: slideIn 0.3s ease-out;
 }
@@ -81,14 +81,15 @@
   align-items: center;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid var(--kawaii-pink-light);
+  border-bottom: 1px solid var(--gray-200);
 }
 
 .menu-header h3 {
   margin: 0;
-  color: var(--kawaii-text);
-  font-family: 'Comic Sans MS', cursive;
+  color: var(--gray-600);
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .close-menu {
@@ -115,49 +116,61 @@
   gap: 0.75rem;
   padding: 0.75rem 1rem;
   border: none;
-  border-radius: 15px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Comic Sans MS', cursive;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   text-align: left;
   width: 100%;
+  background: var(--gray-50);
+  color: var(--gray-600);
+  border: 1px solid var(--gray-200);
 }
 
 .menu-item.pink {
-  background: linear-gradient(135deg, var(--kawaii-pink-light) 0%, var(--kawaii-pink) 100%);
-  color: var(--kawaii-text);
+  background: var(--pink-50);
+  color: var(--pink-400);
+  border-color: var(--pink-200);
 }
 
 .menu-item.blue {
-  background: linear-gradient(135deg, var(--kawaii-blue-light) 0%, var(--kawaii-blue) 100%);
-  color: var(--kawaii-text);
+  background: var(--blue-50);
+  color: var(--blue-400);
+  border-color: var(--blue-200);
 }
 
 .menu-item.purple {
-  background: linear-gradient(135deg, var(--kawaii-purple) 0%, var(--kawaii-pink) 100%);
-  color: var(--kawaii-text);
+  background: var(--pink-100);
+  color: var(--pink-500);
+  border-color: var(--pink-300);
 }
 
 .menu-item.green {
-  background: linear-gradient(135deg, #E8F5E8 0%, #C8E6C9 100%);
-  color: var(--kawaii-text);
+  background: var(--blue-100);
+  color: var(--blue-500);
+  border-color: var(--blue-300);
 }
 
 .menu-item.yellow {
-  background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
-  color: var(--kawaii-text);
+  background: var(--pink-50);
+  color: var(--pink-400);
+  border-color: var(--pink-200);
 }
 
 .menu-item:hover {
-  transform: translateX(5px);
-  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+  transform: translateX(2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--pink-300);
 }
 
 .menu-item.active {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(255, 182, 193, 0.5);
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
+  background: var(--pink-100);
+  color: var(--pink-400);
+  border-color: var(--pink-300);
 }
 
 .menu-icon {
@@ -189,7 +202,7 @@
 .menu-decoration {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--kawaii-pink-light);
+  border-top: 1px solid var(--gray-200);
 }
 
 .decoration-items {

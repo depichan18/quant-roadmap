@@ -1,9 +1,9 @@
 .header {
-  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 50%, var(--kawaii-purple) 100%);
-  color: var(--kawaii-white);
+  background: linear-gradient(135deg, var(--pink-300) 0%, var(--blue-300) 100%);
+  color: var(--white);
   padding: 3rem 0;
   text-align: center;
-  box-shadow: 0 8px 32px rgba(255, 182, 193, 0.4);
+  box-shadow: var(--shadow-lg);
   position: relative;
   overflow: hidden;
 }
@@ -78,17 +78,17 @@
 
 .header-title {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 0 1rem 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  font-family: 'Comic Sans MS', cursive;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .header-title:hover {
-  transform: scale(1.05);
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header-title.bounce {
@@ -121,8 +121,9 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.1rem;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Inter', sans-serif;
   opacity: 0.9;
+  font-weight: 500;
 }
 
 .sparkle {
@@ -148,7 +149,8 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 .header-badges {
@@ -162,33 +164,36 @@
 .badge {
   display: inline-block;
   padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-size: 0.9rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
   font-weight: 500;
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  font-family: 'Comic Sans MS', cursive;
-  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
 }
 
 .badge:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 .badge.pink {
-  background: linear-gradient(135deg, var(--kawaii-pink-light) 0%, var(--kawaii-pink) 100%);
-  color: var(--kawaii-text);
+  background: var(--pink-100);
+  color: var(--pink-400);
+  border-color: var(--pink-200);
 }
 
 .badge.blue {
-  background: linear-gradient(135deg, var(--kawaii-blue-light) 0%, var(--kawaii-blue) 100%);
-  color: var(--kawaii-text);
+  background: var(--blue-100);
+  color: var(--blue-400);
+  border-color: var(--blue-200);
 }
 
 .badge.purple {
-  background: linear-gradient(135deg, var(--kawaii-purple) 0%, var(--kawaii-blue) 100%);
-  color: var(--kawaii-text);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .floating-elements {

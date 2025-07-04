@@ -1,11 +1,11 @@
 .export-progress {
-  background: linear-gradient(135deg, var(--kawaii-white) 0%, var(--kawaii-purple) 100%);
-  border-radius: 25px;
+  background: var(--white);
+  border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 6px 25px rgba(255, 182, 193, 0.3);
+  box-shadow: var(--shadow-md);
   margin: 1rem 0;
   text-align: center;
-  border: 3px solid var(--kawaii-pink-light);
+  border: 1px solid var(--gray-200);
   position: relative;
   overflow: hidden;
 }
@@ -38,10 +38,10 @@
 
 .export-progress h3 {
   margin: 0 0 1.5rem 0;
-  color: var(--kawaii-text);
+  color: var(--gray-600);
   font-size: 1.3rem;
-  font-family: 'Comic Sans MS', cursive;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 .export-buttons {
@@ -52,63 +52,62 @@
 }
 
 .export-button {
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
+  border: 1px solid var(--gray-200);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Comic Sans MS', cursive;
-  box-shadow: 0 3px 10px rgba(255, 182, 193, 0.3);
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+  box-shadow: var(--shadow-sm);
   position: relative;
   overflow: hidden;
-}
-
-.export-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s;
-}
-
-.export-button:hover::before {
-  left: 100%;
-}
-
-.export-button:hover {
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.5);
-}
-
-.export-button {
+  background: var(--white);
+  color: var(--gray-600);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
+.export-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--pink-300);
+}
+
 .export-button.json {
-  background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
-  color: white;
+  background: var(--blue-400);
+  color: var(--white);
+  border-color: var(--blue-400);
+}
+
+.export-button.json:hover {
+  background: var(--blue-300);
+  border-color: var(--blue-300);
 }
 
 .export-button.csv {
-  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-  color: white;
+  background: var(--pink-400);
+  color: var(--white);
+  border-color: var(--pink-400);
+}
+
+.export-button.csv:hover {
+  background: var(--pink-300);
+  border-color: var(--pink-300);
 }
 
 .export-button.report {
-  background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
-  color: #212529;
+  background: var(--blue-100);
+  color: var(--blue-400);
+  border-color: var(--blue-200);
 }
 
-.export-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.export-button.report:hover {
+  background: var(--blue-200);
+  border-color: var(--blue-300);
+  color: var(--blue-500);
 }
 
 @media (max-width: 768px) {

@@ -1,14 +1,14 @@
 .study-timer {
-  background: linear-gradient(135deg, var(--kawaii-white) 0%, var(--kawaii-pink-light) 100%);
-  border-radius: 25px;
+  background: var(--white);
+  border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 6px 25px rgba(255, 182, 193, 0.3);
+  box-shadow: var(--shadow-md);
   margin: 1rem 0;
   text-align: center;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid var(--kawaii-pink-light);
+  border: 1px solid var(--gray-200);
   position: relative;
   overflow: hidden;
 }
@@ -37,10 +37,10 @@
 
 .study-timer h3 {
   margin: 0 0 1.5rem 0;
-  color: var(--kawaii-text);
+  color: var(--gray-600);
   font-size: 1.4rem;
-  font-family: 'Comic Sans MS', cursive;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 .timer-display {
@@ -60,13 +60,13 @@
   border-radius: 50%;
   background: conic-gradient(var(--color) 0deg,
       var(--color) calc(var(--progress) * 3.6deg),
-      #e9ecef calc(var(--progress) * 3.6deg),
-      #e9ecef 360deg);
+      var(--gray-200) calc(var(--progress) * 3.6deg),
+      var(--gray-200) 360deg);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
 .timer-progress::before {
@@ -75,7 +75,7 @@
   width: 85%;
   height: 85%;
   border-radius: 50%;
-  background: white;
+  background: var(--white);
 }
 
 .time {
@@ -89,9 +89,10 @@
 
 .mode {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--gray-500);
   font-weight: 500;
   margin-top: 0.5rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .timer-controls {
@@ -102,7 +103,7 @@
 }
 
 .primary-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--pink-400) 0%, var(--blue-400) 100%);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -112,17 +113,19 @@
   cursor: pointer;
   transition: all 0.3s ease;
   min-width: 120px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: var(--shadow-sm);
 }
 
 .primary-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
 .secondary-button {
-  background: #f8f9fa;
-  color: #666;
-  border: 1px solid #dee2e6;
+  background: var(--gray-50);
+  color: var(--gray-600);
+  border: 1px solid var(--gray-200);
   padding: 0.75rem 1rem;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -130,11 +133,14 @@
   cursor: pointer;
   transition: all 0.3s ease;
   min-width: 100px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: var(--shadow-sm);
 }
 
 .secondary-button:hover {
-  background: #e9ecef;
+  background: var(--gray-100);
   transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 @media (max-width: 768px) {
