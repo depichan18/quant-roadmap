@@ -1,0 +1,102 @@
+:root {
+  font-family: 'Comic Sans MS', cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Kawaii Pink-Blue-White Color Theme */
+  --kawaii-pink: #FFB6C1;
+  --kawaii-pink-light: #FFE1E6;
+  --kawaii-pink-dark: #FF91A4;
+  --kawaii-blue: #B8E6FF;
+  --kawaii-blue-light: #E8F4FF;
+  --kawaii-blue-dark: #87CEEB;
+  --kawaii-white: #FFFFFF;
+  --kawaii-cream: #FFF8F0;
+  --kawaii-purple: #E6E6FA;
+  --kawaii-text: #4A4A4A;
+  --kawaii-text-light: #7A7A7A;
+
+  color-scheme: light;
+  color: var(--kawaii-text);
+  background-color: var(--kawaii-white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--kawaii-pink-light) 0%, var(--kawaii-blue-light) 50%, var(--kawaii-cream) 100%);
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 20px;
+  border: 2px solid transparent;
+  padding: 0.7em 1.5em;
+  font-size: 0.9em;
+  font-weight: 600;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 100%);
+  color: var(--kawaii-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(255, 182, 193, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.5);
+  background: linear-gradient(135deg, var(--kawaii-pink-dark) 0%, var(--kawaii-blue-dark) 100%);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--kawaii-pink);
+  outline-offset: 2px;
+}
+
+/* Custom kawaii scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--kawaii-pink-light);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 100%);
+  border-radius: 10px;
+  border: 2px solid var(--kawaii-white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--kawaii-pink-dark) 0%, var(--kawaii-blue-dark) 100%);
+}

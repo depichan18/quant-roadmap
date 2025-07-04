@@ -1,0 +1,124 @@
+.export-progress {
+  background: linear-gradient(135deg, var(--kawaii-white) 0%, var(--kawaii-purple) 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 6px 25px rgba(255, 182, 193, 0.3);
+  margin: 1rem 0;
+  text-align: center;
+  border: 3px solid var(--kawaii-pink-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.export-progress::before {
+  content: '📥💾✨🎀';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+.export-progress h3 {
+  margin: 0 0 1.5rem 0;
+  color: var(--kawaii-text);
+  font-size: 1.3rem;
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: 700;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.export-button {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Comic Sans MS', cursive;
+  box-shadow: 0 3px 10px rgba(255, 182, 193, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.export-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.export-button:hover::before {
+  left: 100%;
+}
+
+.export-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.5);
+}
+
+.export-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.export-button.json {
+  background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+  color: white;
+}
+
+.export-button.csv {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+.export-button.report {
+  background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+  color: #212529;
+}
+
+.export-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .export-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .export-button {
+    width: 100%;
+    max-width: 200px;
+  }
+}

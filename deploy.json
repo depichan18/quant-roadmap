@@ -1,0 +1,10 @@
+{
+  "name": "quant-roadmap-deployment",
+  "scripts": {
+    "build": "npm run build",
+    "preview": "npm run preview"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

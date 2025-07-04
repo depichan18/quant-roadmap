@@ -1,0 +1,255 @@
+.explorer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.explorer-toggle {
+  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 100%);
+  color: var(--kawaii-white);
+  border: none;
+  border-radius: 25px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.4);
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.explorer-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 182, 193, 0.6);
+}
+
+.explorer-toggle.active {
+  background: linear-gradient(135deg, var(--kawaii-purple) 0%, var(--kawaii-pink) 100%);
+  transform: scale(1.05);
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.explorer-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 1rem;
+  background: var(--kawaii-white);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 40px rgba(255, 182, 193, 0.3);
+  border: 2px solid var(--kawaii-pink-light);
+  min-width: 250px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--kawaii-pink-light);
+}
+
+.menu-header h3 {
+  margin: 0;
+  color: var(--kawaii-text);
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 1.1rem;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-menu:hover {
+  transform: rotate(180deg);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: left;
+  width: 100%;
+}
+
+.menu-item.pink {
+  background: linear-gradient(135deg, var(--kawaii-pink-light) 0%, var(--kawaii-pink) 100%);
+  color: var(--kawaii-text);
+}
+
+.menu-item.blue {
+  background: linear-gradient(135deg, var(--kawaii-blue-light) 0%, var(--kawaii-blue) 100%);
+  color: var(--kawaii-text);
+}
+
+.menu-item.purple {
+  background: linear-gradient(135deg, var(--kawaii-purple) 0%, var(--kawaii-pink) 100%);
+  color: var(--kawaii-text);
+}
+
+.menu-item.green {
+  background: linear-gradient(135deg, #E8F5E8 0%, #C8E6C9 100%);
+  color: var(--kawaii-text);
+}
+
+.menu-item.yellow {
+  background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+  color: var(--kawaii-text);
+}
+
+.menu-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+}
+
+.menu-item.active {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 182, 193, 0.5);
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.menu-label {
+  flex: 1;
+}
+
+.active-indicator {
+  font-size: 1rem;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.menu-decoration {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--kawaii-pink-light);
+}
+
+.decoration-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.decoration-items span {
+  font-size: 1.2rem;
+  opacity: 0.7;
+  animation: float 3s ease-in-out infinite;
+}
+
+.dec-1 {
+  animation-delay: 0s;
+}
+
+.dec-2 {
+  animation-delay: 0.5s;
+}
+
+.dec-3 {
+  animation-delay: 1s;
+}
+
+.dec-4 {
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .explorer {
+    top: 10px;
+    right: 10px;
+  }
+
+  .explorer-toggle {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .explorer-menu {
+    min-width: 200px;
+    padding: 1rem;
+  }
+
+  .menu-item {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}

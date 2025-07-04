@@ -1,0 +1,250 @@
+.header {
+  background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-blue) 50%, var(--kawaii-purple) 100%);
+  color: var(--kawaii-white);
+  padding: 3rem 0;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(255, 182, 193, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.header-decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  pointer-events: none;
+}
+
+.decoration {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.decoration.left {
+  left: 10%;
+  top: 20%;
+  animation-delay: 0s;
+}
+
+.decoration.right {
+  right: 10%;
+  top: 20%;
+  animation-delay: 1s;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Comic Sans MS', cursive;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-title:hover {
+  transform: scale(1.05);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-title.bounce {
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.cute-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-family: 'Comic Sans MS', cursive;
+  opacity: 0.9;
+}
+
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.header-description {
+  font-size: 1.2rem;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.header-badges {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-family: 'Comic Sans MS', cursive;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.badge.pink {
+  background: linear-gradient(135deg, var(--kawaii-pink-light) 0%, var(--kawaii-pink) 100%);
+  color: var(--kawaii-text);
+}
+
+.badge.blue {
+  background: linear-gradient(135deg, var(--kawaii-blue-light) 0%, var(--kawaii-blue) 100%);
+  color: var(--kawaii-text);
+}
+
+.badge.purple {
+  background: linear-gradient(135deg, var(--kawaii-purple) 0%, var(--kawaii-blue) 100%);
+  color: var(--kawaii-text);
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.floating-elements span {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.float-1 {
+  left: 5%;
+  top: 30%;
+  animation: float 4s ease-in-out infinite;
+}
+
+.float-2 {
+  right: 5%;
+  top: 40%;
+  animation: float 3s ease-in-out infinite 1s;
+}
+
+.float-3 {
+  left: 15%;
+  bottom: 30%;
+  animation: float 5s ease-in-out infinite 2s;
+}
+
+.float-4 {
+  right: 15%;
+  bottom: 40%;
+  animation: float 3.5s ease-in-out infinite 1.5s;
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-description {
+    font-size: 1rem;
+  }
+
+  .header-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge {
+    max-width: 250px;
+  }
+}

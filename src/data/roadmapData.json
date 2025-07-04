@@ -1,0 +1,584 @@
+{
+  "title": "Quant Researcher Learning Roadmap",
+  "description": "2-month intensive learning path to become a quantitative researcher",
+  "duration": "2 months",
+  "totalWeeks": 8,
+  "weeks": [
+    {
+      "id": 1,
+      "title": "Week 1: Foundation - Mathematics & Statistics",
+      "objectives": [
+        "Master basic probability theory",
+        "Understand statistical distributions",
+        "Learn descriptive statistics"
+      ],
+      "materials": [
+        "Probability theory basics",
+        "Random variables and distributions",
+        "Mean, median, mode, variance, standard deviation",
+        "Central limit theorem"
+      ],
+      "tools": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Matplotlib"
+      ],
+      "dailyTasks": [
+        {
+          "day": 1,
+          "task": "Setup Python environment and learn basic probability",
+          "completed": false
+        },
+        {
+          "day": 2,
+          "task": "Study random variables and probability distributions",
+          "completed": false
+        },
+        {
+          "day": 3,
+          "task": "Practice descriptive statistics with Python",
+          "completed": false
+        },
+        {
+          "day": 4,
+          "task": "Implement basic statistical functions",
+          "completed": false
+        },
+        {
+          "day": 5,
+          "task": "Work on probability exercises",
+          "completed": false
+        },
+        {
+          "day": 6,
+          "task": "Central limit theorem examples",
+          "completed": false
+        },
+        {
+          "day": 7,
+          "task": "Review and practice problems",
+          "completed": false
+        }
+      ],
+      "project": "Create a Python program to calculate basic statistics for a dataset",
+      "resources": {
+        "books": [
+          "Introduction to Probability by Blitzstein & Hwang"
+        ],
+        "websites": [
+          "Khan Academy - Statistics",
+          "Coursera - Statistics Course"
+        ],
+        "youtube": [
+          "StatQuest with Josh Starmer",
+          "Khan Academy Statistics"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Week 2: Linear Algebra & Calculus for Finance",
+      "objectives": [
+        "Master matrix operations",
+        "Understand eigenvalues and eigenvectors",
+        "Learn basic calculus for optimization"
+      ],
+      "materials": [
+        "Matrix algebra",
+        "Eigenvalues and eigenvectors",
+        "Derivatives and optimization",
+        "Partial derivatives"
+      ],
+      "tools": [
+        "Python",
+        "NumPy",
+        "SciPy",
+        "SymPy"
+      ],
+      "dailyTasks": [
+        {
+          "day": 1,
+          "task": "Matrix operations with NumPy",
+          "completed": false
+        },
+        {
+          "day": 2,
+          "task": "Eigenvalues and eigenvectors computation",
+          "completed": false
+        },
+        {
+          "day": 3,
+          "task": "Basic calculus review",
+          "completed": false
+        },
+        {
+          "day": 4,
+          "task": "Optimization problems",
+          "completed": false
+        },
+        {
+          "day": 5,
+          "task": "Portfolio optimization math",
+          "completed": false
+        },
+        {
+          "day": 6,
+          "task": "Linear algebra in finance applications",
+          "completed": false
+        },
+        {
+          "day": 7,
+          "task": "Practice problems and review",
+          "completed": false
+        }
+      ],
+      "project": "Build a portfolio optimization calculator using linear algebra",
+      "resources": {
+        "books": [
+          "Linear Algebra and Its Applications by Strang"
+        ],
+        "websites": [
+          "MIT OpenCourseWare - Linear Algebra"
+        ],
+        "youtube": [
+          "3Blue1Brown - Linear Algebra",
+          "Khan Academy Calculus"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Week 3: Programming for Finance",
+      "objectives": [
+        "Master Python for financial data analysis",
+        "Learn data manipulation with Pandas",
+        "Understand financial data structures"
+      ],
+      "materials": [
+        "Python programming advanced concepts",
+        "Pandas for financial data",
+        "Data cleaning and preprocessing",
+        "Financial data APIs"
+      ],
+      "tools": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "yfinance",
+        "Jupyter"
+      ],
+      "dailyTasks": [
+        {
+          "day": 1,
+          "task": "Advanced Python concepts for finance",
+          "completed": false
+        },
+        {
+          "day": 2,
+          "task": "Pandas for financial data manipulation",
+          "completed": false
+        },
+        {
+          "day": 3,
+          "task": "Downloading financial data with APIs",
+          "completed": false
+        },
+        {
+          "day": 4,
+          "task": "Data cleaning and preprocessing",
+          "completed": false
+        },
+        {
+          "day": 5,
+          "task": "Financial data visualization",
+          "completed": false
+        },
+        {
+          "day": 6,
+          "task": "Time series data handling",
+          "completed": false
+        },
+        {
+          "day": 7,
+          "task": "Build a data pipeline",
+          "completed": false
+        }
+      ],
+      "project": "Create a financial data analysis pipeline with real market data",
+      "resources": {
+        "books": [
+          "Python for Finance by Hilpisch"
+        ],
+        "websites": [
+          "Real Python",
+          "QuantInsti"
+        ],
+        "youtube": [
+          "Python for Finance",
+          "Algorithmic Trading with Python"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Week 4: Financial Markets & Instruments",
+      "objectives": [
+        "Understand financial markets structure",
+        "Learn about different financial instruments",
+        "Master risk and return concepts"
+      ],
+      "materials": [
+        "Stock markets and trading",
+        "Fixed income securities",
+        "Derivatives basics",
+        "Risk and return relationship"
+      ],
+      "tools": [
+        "Python",
+        "yfinance",
+        "pandas",
+        "matplotlib"
+      ],
+      "dailyTasks": [
+        {
+          "day": 1,
+          "task": "Study stock market fundamentals",
+          "completed": false
+        },
+        {
+          "day": 2,
+          "task": "Learn about bonds and fixed income",
+          "completed": false
+        },
+        {
+          "day": 3,
+          "task": "Introduction to derivatives",
+          "completed": false
+        },
+        {
+          "day": 4,
+          "task": "Risk and return calculations",
+          "completed": false
+        },
+        {
+          "day": 5,
+          "task": "Portfolio theory basics",
+          "completed": false
+        },
+        {
+          "day": 6,
+          "task": "Market data analysis",
+          "completed": false
+        },
+        {
+          "day": 7,
+          "task": "Review and practice",
+          "completed": false
+        }
+      ],
+      "project": "Build a market analysis tool for different asset classes",
+      "resources": {
+        "books": [
+          "Options, Futures, and Other Derivatives by Hull"
+        ],
+        "websites": [
+          "Investopedia",
+          "CFA Institute"
+        ],
+        "youtube": [
+          "Ben Felix",
+          "The Plain Bagel"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Week 5: Time Series Analysis",
+      "objectives": [
+        "Master time series concepts",
+        "Learn forecasting techniques",
+        "Understand seasonality and trends"
+      ],
+      "materials": [
+        "Time series components",
+        "Moving averages",
+        "ARIMA models",
+        "Seasonal decomposition"
+      ],
+      "tools": [
+        "Python",
+        "statsmodels",
+        "scipy",
+        "matplotlib"
+      ],
+      "dailyTasks": [
+        {
+          "day": 1,
+          "task": "Time series basics and visualization",
+          "completed": false
+        },
+        {
+          "day": 2,
+          "task": "Moving averages and smoothing",
+          "completed": false
+        },
+        {
+          "day": 3,
+          "task": "Trend and seasonality analysis",
+          "completed": false
+        },
+        {
+          "day": 4,
+          "task": "ARIMA model implementation",
+          "completed": false
+        },
+        {
+          "day": 5,
+          "task": "Forecasting with time series",
+          "completed": false
+        },
+        {
+          "day": 6,
+          "task": "Volatility modeling",
+          "completed": false
+        },
+        {
+          "day": 7,
+          "task": "Practice with real financial data",
+          "completed": false
+        }
+      ],
+      "project": "Create a stock price forecasting model using time series analysis",
+      "resources": {
+        "books": [
+          "Time Series Analysis by Hamilton"
+        ],
+        "websites": [
+          "Towards Data Science",
+          "Analytics Vidhya"
+        ],
+        "youtube": [
+          "ritvikmath",
+          "StatQuest"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": "Week 6: Portfolio Theory & Risk Management",
+      "objectives": [
+        "Master Modern Portfolio Theory",
+        "Learn risk metrics and management",
+        "Understand portfolio optimization"
+      ],
+      "materials": [
+        "Markowitz portfolio theory",
+        "CAPM model",
+        "Value at Risk (VaR)",
+        "Sharpe ratio and risk metrics"
+      ],
+      "tools": [
+        "Python",
+        "scipy.optimize",
+        "cvxpy",
+        "numpy"
+      ],
+      "dailyTasks": [
+        {
+          "day": 1,
+          "task": "Modern Portfolio Theory fundamentals",
+          "completed": false
+        },
+        {
+          "day": 2,
+          "task": "CAPM model implementation",
+          "completed": false
+        },
+        {
+          "day": 3,
+          "task": "Portfolio optimization with Python",
+          "completed": false
+        },
+        {
+          "day": 4,
+          "task": "Risk metrics calculation",
+          "completed": false
+        },
+        {
+          "day": 5,
+          "task": "Value at Risk models",
+          "completed": false
+        },
+        {
+          "day": 6,
+          "task": "Backtesting portfolio strategies",
+          "completed": false
+        },
+        {
+          "day": 7,
+          "task": "Risk management frameworks",
+          "completed": false
+        }
+      ],
+      "project": "Build a complete portfolio optimization and risk management system",
+      "resources": {
+        "books": [
+          "Portfolio Selection by Markowitz"
+        ],
+        "websites": [
+          "QuantLib",
+          "Risk.net"
+        ],
+        "youtube": [
+          "Quantitative Finance",
+          "Risk Management"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": "Week 7: Basic Trading Strategies",
+      "objectives": [
+        "Learn algorithmic trading concepts",
+        "Understand backtesting frameworks",
+        "Implement basic trading strategies"
+      ],
+      "materials": [
+        "Mean reversion strategies",
+        "Momentum strategies",
+        "Pairs trading",
+        "Backtesting methodologies"
+      ],
+      "tools": [
+        "Python",
+        "zipline",
+        "backtrader",
+        "pandas"
+      ],
+      "dailyTasks": [
+        {
+          "day": 1,
+          "task": "Algorithmic trading introduction",
+          "completed": false
+        },
+        {
+          "day": 2,
+          "task": "Mean reversion strategy implementation",
+          "completed": false
+        },
+        {
+          "day": 3,
+          "task": "Momentum strategy development",
+          "completed": false
+        },
+        {
+          "day": 4,
+          "task": "Pairs trading strategy",
+          "completed": false
+        },
+        {
+          "day": 5,
+          "task": "Backtesting framework setup",
+          "completed": false
+        },
+        {
+          "day": 6,
+          "task": "Strategy performance analysis",
+          "completed": false
+        },
+        {
+          "day": 7,
+          "task": "Risk-adjusted returns evaluation",
+          "completed": false
+        }
+      ],
+      "project": "Develop and backtest a multi-strategy trading system",
+      "resources": {
+        "books": [
+          "Quantitative Trading by Chan"
+        ],
+        "websites": [
+          "QuantStart",
+          "Quantopian Archive"
+        ],
+        "youtube": [
+          "Algorithmic Trading",
+          "QuantInsti"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "title": "Week 8: Introduction to Quantitative Research",
+      "objectives": [
+        "Understand research methodologies",
+        "Learn factor modeling",
+        "Master research presentation skills"
+      ],
+      "materials": [
+        "Research design and methodology",
+        "Factor models",
+        "Academic paper structure",
+        "Data analysis and interpretation"
+      ],
+      "tools": [
+        "Python",
+        "Jupyter",
+        "LaTeX",
+        "Git"
+      ],
+      "dailyTasks": [
+        {
+          "day": 1,
+          "task": "Research methodology fundamentals",
+          "completed": false
+        },
+        {
+          "day": 2,
+          "task": "Factor model implementation",
+          "completed": false
+        },
+        {
+          "day": 3,
+          "task": "Academic paper analysis",
+          "completed": false
+        },
+        {
+          "day": 4,
+          "task": "Research project planning",
+          "completed": false
+        },
+        {
+          "day": 5,
+          "task": "Data analysis for research",
+          "completed": false
+        },
+        {
+          "day": 6,
+          "task": "Research presentation preparation",
+          "completed": false
+        },
+        {
+          "day": 7,
+          "task": "Final project completion",
+          "completed": false
+        }
+      ],
+      "project": "Complete a mini research project on a quantitative finance topic",
+      "resources": {
+        "books": [
+          "Quantitative Portfolio Management by Chincarini"
+        ],
+        "websites": [
+          "SSRN",
+          "arXiv Finance"
+        ],
+        "youtube": [
+          "MIT Finance",
+          "Quantitative Finance Research"
+        ]
+      }
+    }
+  ]
+}
