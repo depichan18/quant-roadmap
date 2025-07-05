@@ -5,6 +5,16 @@ const WeekCard = ({ week, onToggleTask, onOpenModal }) => {
   const completedTasks = week.dailyTasks.filter(task => task.completed).length
   const totalTasks = week.dailyTasks.length
   const progressPercentage = Math.round((completedTasks / totalTasks) * 100)
+  
+  // Check if there are any uploaded images
+  const tasksWithDocumentation = week.dailyTasks.filter(task => task.documentation.imageUrl).length
+  const projectDocumented = week.project && week.project.documentation && week.project.documentation.imageUrl ? 1 : 0
+  const totalDocumented = tasksWithDocumentation + projectDocumented
+  const hasDocumentation = totalDocumented > 0
+  
+  // Get first available image for preview
+  const firstImage = week.dailyTasks.find(task => task.documentation.imageUrl)?.documentation.imageUrl ||
+                     (week.project && week.project.documentation && week.project.documentation.imageUrl)
 
   const weekIcons = ['🌸', '🦋', '🌙', '✨', '🎀', '💖', '🌟', '🦄']
   const weekIcon = weekIcons[week.id - 1] || '💫'
@@ -51,6 +61,21 @@ const WeekCard = ({ week, onToggleTask, onOpenModal }) => {
           <span className="preview-label">🛠️ Tools:</span>
           <span className="preview-count">{week.tools.length} tools</span>
         </div>
+        {hasDocumentation && (
+          <div className="preview-section documentation-indicator">
+            <span className="preview-label">📸 Progress:</span>
+            <span className="preview-count documented">{totalDocumented} items</span>
+            {firstImage && (
+              <div className="mini-preview">
+                <img 
+                  src={firstImage} 
+                  alt="Progress preview" 
+                  className="mini-preview-image"
+                />
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   )

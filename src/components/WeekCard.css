@@ -488,6 +488,44 @@
   min-width: fit-content;
 }
 
+/* Documentation Indicator in WeekCard */
+.documentation-indicator {
+  border-top: 1px solid var(--pink-200);
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.preview-count.documented {
+  background: var(--green-100);
+  color: var(--green-600);
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.mini-preview {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mini-preview-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--pink-200);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.mini-preview-image:hover {
+  transform: scale(1.1);
+  border-color: var(--pink-400);
+  box-shadow: var(--shadow-md);
+}
+
 @media (max-width: 768px) {
   .week-header {
     flex-direction: column;

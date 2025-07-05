@@ -95,6 +95,45 @@ function App() {
     }
   }, [weeks, selectedWeek?.id])
 
+  const updateDocumentation = (weekId, taskDay, field, value) => {
+    setWeeks(prevWeeks =>
+      prevWeeks.map(week => {
+        if (week.id === weekId) {
+          if (taskDay === 'project') {
+            // Update project documentation
+            return {
+              ...week,
+              project: {
+                ...week.project,
+                documentation: {
+                  ...week.project.documentation,
+                  [field]: value
+                }
+              }
+            }
+          } else {
+            // Update task documentation
+            return {
+              ...week,
+              dailyTasks: week.dailyTasks.map(task =>
+                task.day === taskDay
+                  ? {
+                      ...task,
+                      documentation: {
+                        ...task.documentation,
+                        [field]: value
+                      }
+                    }
+                  : task
+              )
+            }
+          }
+        }
+        return week
+      })
+    )
+  }
+
   const toggleTask = (weekId, taskDay) => {
     setWeeks(prevWeeks =>
       prevWeeks.map(week => {
@@ -196,6 +235,7 @@ function App() {
         onClose={handleCloseWeekModal}
         week={selectedWeek}
         onToggleTask={toggleTask}
+        onUpdateDocumentation={updateDocumentation}
       />
     </div>
   )
