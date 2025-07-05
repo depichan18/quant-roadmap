@@ -1,4 +1,30 @@
-# 💙 Depichan's Kawaii Quant Journey
+# 💙 Dep- **📊 Progress Tracking**: Re## 📋 Learning Curriculum (8 Weeks)l-time progress indicators wi1. \*\*🎮 Explorer Menu### 🎮 Explorer Menu System
+
+- 🍱 Clean minimalist toggle button with pink-600 ## 👩‍💻 About
+
+Created by **Depichan (Devi Rosa Aprilla)**, Mathematics student at Institut Teknologi Sepuluh Nopember (ITS).
+
+_"Learning should be engaging, beautiful, and effective!"_
+
+---
+
+**Start your quantitative research journey today!** 🚀 Soft blue-pink gradient backgrounds without white
+
+- 🎯 Quick access to all features: Statistics, Timer, Export, Help
+- 💫 Smooth animations and glass-morphism effects
+- 📱 Mobile-responsive with adaptive sizingck the cute menu toggle in the top-right corner to access all features
+
+2. **🌸 Track Daily Tasks**: Click on those adorable checkboxes to mark tasks as completed
+3. **📊 View Progress**: Watch your progress bloom in the header section with smooth animations
+4. **🍅 Study Timer**: Use the kawaii Pomodoro timer for focused study sessionsisual feedback
+
+- **✅ Task Management**: Interactive daily task checklist with completion tracking
+- **📈 Analytics Dashboard**: Learning statistics with motivational insights
+- **⏱️ Study Timer**: Built-in Pomodoro timer for focused study sessions
+- **📄 Export Options**: Export progress as JSON, CSV, or HTML reports
+- **🎮 Explorer Menu**: Clean navigation system for easy feature access
+- **📱 Responsive Design**: Optimized for all devices with adaptive layouts
+- **💾 Local Storage**: Secure local data storage with backup optionsKawaii Quant Journey
 
 > A beautiful and interactive learning tracker for aspiring quantitative researchers
 
