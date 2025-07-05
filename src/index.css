@@ -312,7 +312,10 @@ button:focus-visible {
 }
 
 /* Override untuk explorer toggle button */
-.explorer-toggle,
+.explorer-toggle {
+  color: var(--pink-600) !important;
+}
+
 .explorer-toggle:hover,
 .explorer-toggle:focus,
 .explorer-toggle:active,
@@ -321,7 +324,7 @@ button:focus-visible {
 }
 
 .explorer-toggle:hover {
-  background: linear-gradient(135deg, var(--pink-400) 0%, var(--blue-400) 100%) !important;
+  background: linear-gradient(135deg, var(--blue-300) 0%, var(--pink-300) 100%) !important;
 }
 
 .explorer-toggle.active {

@@ -429,7 +429,7 @@ const WeekModal = ({ isOpen, onClose, week, onToggleTask, onUpdateDocumentation 
                         
                         <div className="file-upload-section">
                           <label htmlFor={`file-upload-${week.id}-project`} className="file-upload-label">
-                            Up Project
+                            Upload
                           </label>
                           <input
                             id={`file-upload-${week.id}-project`}

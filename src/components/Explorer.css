@@ -8,39 +8,44 @@
 }
 
 .explorer-toggle {
-  background: linear-gradient(135deg, var(--pink-300) 0%, var(--blue-300) 100%);
-  color: var(--white);
-  border: none;
-  border-radius: 12px;
-  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, #bae6fd 0%, #f9a8d4 100%);
+  color: #dc2626;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
   cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
+  backdrop-filter: blur(10px);
 }
 
 .explorer-toggle:hover {
   transform: translateY(-1px);
-  box-shadow: var(--shadow-lg);
-  color: var(--white) !important;
-  background: linear-gradient(135deg, var(--pink-400) 0%, var(--blue-400) 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  color: #475569;
+  background: linear-gradient(135deg, #7dd3fc 0%, #f472b6 100%);
+  border-color: rgba(148, 163, 184, 0.3);
 }
 
 .explorer-toggle.active {
-  background: var(--pink-400) !important;
-  color: var(--white) !important;
+  background: linear-gradient(135deg, #60a5fa 0%, #ec4899 100%);
+  color: #334155;
   transform: scale(1.02);
+  border-color: rgba(148, 163, 184, 0.4);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 }
 
 .explorer-toggle.active:hover {
-  background: var(--pink-500) !important;
-  color: var(--white) !important;
+  background: linear-gradient(135deg, #3b82f6 0%, #e11d48 100%);
+  color: #1e293b;
   transform: scale(1.02) translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .toggle-icon {
@@ -302,17 +307,17 @@
   }
 
   .explorer-toggle {
-    padding: 0.75rem 1rem;
-    font-size: 0.9rem;
-    color: var(--white) !important;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.8rem;
+    color: #dc2626;
   }
 
   .explorer-toggle:hover {
-    color: var(--white) !important;
+    color: #475569;
   }
 
   .explorer-toggle.active {
-    color: var(--white) !important;
+    color: #334155;
   }
 
   .explorer-menu {

@@ -52,6 +52,26 @@ const Header = () => {
           <span className="decoration float-2">💫</span>
           <span className="decoration float-3">🌸</span>
           <span className="decoration float-4">💖</span>
+          <span className="decoration bounce-1">✨</span>
+          <span className="decoration bounce-2">🌸</span>
+          <span className="decoration bounce-3">💫</span>
+          <span className="decoration bounce-4">💖</span>
+          <span className="decoration fade-1">✨</span>
+          <span className="decoration fade-2">🌸</span>
+          <span className="decoration fade-3">💫</span>
+          <span className="decoration fade-4">💖</span>
+          <span className="decoration pulse-1">✨</span>
+          <span className="decoration pulse-2">🌸</span>
+          <span className="decoration pulse-3">💫</span>
+          <span className="decoration pulse-4">💖</span>
+          <span className="decoration spin-1">✨</span>
+          <span className="decoration spin-2">🌸</span>
+          <span className="decoration spin-3">💫</span>
+          <span className="decoration spin-4">💖</span>
+          <span className="decoration swing-1">✨</span>
+          <span className="decoration swing-2">🌸</span>
+          <span className="decoration swing-3">💫</span>
+          <span className="decoration swing-4">💖</span>
         </div>
 
         <h1

@@ -25,7 +25,7 @@ const Explorer = ({ onMenuSelect, activeMenu }) => {
       {isOpen && (
         <div className="explorer-menu">
           <div className="menu-header">
-            <h3>🌟 Kawaii Menu 🌟</h3>
+            <h3>🌟 Menu 🌟</h3>
             <button className="close-menu" onClick={() => setIsOpen(false)}>
               ✨
             </button>

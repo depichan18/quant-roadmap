@@ -871,8 +871,8 @@
 .file-upload-label {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: var(--blue-400);
-  color: var(--white);
+  background: var(--blue-50);
+  color: var(--blue-600);
   border-radius: 8px;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
@@ -883,8 +883,9 @@
 }
 
 .file-upload-label:hover {
-  background: var(--blue-500);
+  background: var(--blue-100);
   border-color: var(--blue-500);
+  color: var(--blue-700);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
