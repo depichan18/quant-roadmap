@@ -1,61 +1,23 @@
-# 💙 Dep- **📊 Progress Tracking**: Re## 📋 Learning Curriculum (8 Weeks)l-time progress indicators wi1. \*\*🎮 Explorer Menu### 🎮 Explorer Menu System
+# 💙 Kawaii Quant Journey 🌸
 
-- 🍱 Clean minimalist toggle button with pink-600 ## 👩‍💻 About
+![Week Cards](Documentation/Card.png)
 
-Created by **Depichan (Devi Rosa Aprilla)**, Mathematics student at Institut Teknologi Sepuluh Nopember (ITS).
+> _✨ A beautiful and interactive learning tracker for aspiring quantitative researchers! ✨_
 
-_"Learning should be engaging, beautiful, and effective!"_
+Welcome to the most adorable quant learning experience ever created! 🎀 This magical pink-blue themed application will guide you through your 2-month journey to becoming a quantitative researcher with style and cuteness!
 
----
+## ✨ Key Features
 
-**Start your quantitative research journey today!** 🚀 Soft blue-pink gradient backgrounds without white
-
-- 🎯 Quick access to all features: Statistics, Timer, Export, Help
-- 💫 Smooth animations and glass-morphism effects
-- 📱 Mobile-responsive with adaptive sizingck the cute menu toggle in the top-right corner to access all features
-
-2. **🌸 Track Daily Tasks**: Click on those adorable checkboxes to mark tasks as completed
-3. **📊 View Progress**: Watch your progress bloom in the header section with smooth animations
-4. **🍅 Study Timer**: Use the kawaii Pomodoro timer for focused study sessionsisual feedback
-
+- **📊 Progress Tracking**: Real-time progress indicators with visual feedback
 - **✅ Task Management**: Interactive daily task checklist with completion tracking
 - **📈 Analytics Dashboard**: Learning statistics with motivational insights
 - **⏱️ Study Timer**: Built-in Pomodoro timer for focused study sessions
 - **📄 Export Options**: Export progress as JSON, CSV, or HTML reports
 - **🎮 Explorer Menu**: Clean navigation system for easy feature access
 - **📱 Responsive Design**: Optimized for all devices with adaptive layouts
-- **💾 Local Storage**: Secure local data storage with backup optionsKawaii Quant Journey
+- **💾 Local Storage**: Secure local data storage with backup options
 
-> A beautiful and interactive learning tracker for aspiring quantitative researchers
-
-An adorable pink-blue themed application that guides you through a comprehensive 2-month journey to become a quantitative researcher with style and functionality.
-
-## ✨ Key Features
-
-- **📊 Progress Tracking**: Real-time progress indicators with visual feedback
-- **✅ Task Management**: Interactive daily task checklist with completion tracking
-- **� Analytics Dashboard**: Learning statistics with motivational insights
-- **⏱️ Study Timer**: Built-in Pomodoro timer for focused study sessions
-- **📄 Export Options**: Export progress as JSON, CSV, or HTML reports
-- **� Explorer Menu**: Clean navigation system for easy feature access
-- **� Responsive Design**: Optimized for all devices with adaptive layouts
-- **💾 Local Storage**: Secure local data storage with backup optionss Kawaii Quant Journey 💙🌸
-
-> _✨ A super cute and interactive learning tracker for aspiring quantitative researchers! ✨_
-
-Welcome to the most adorable quant learning experience ever created! 🎀 This magical pink-blue themed application will guide you through your 2-month journey to becoming a quantitative researcher with style and cuteness!
-
-## 🎯✨ Kawaii Features ✨🎯
-
-- **🌸 Progress Tracking**: Adorable circular progress indicators with pastel colors
-- **💖 Daily Task Checklist**: Cute checkboxes that sparkle when completed!
-- **� Learning Statistics**: Beautiful analytics with motivational kawaii messages
-- **� Pomodoro Timer**: Sweet study timer with gentle notifications and pink gradients
-- **📄 Export Progress**: Export your journey as pretty JSON, CSV, or cute HTML reports
-- **🌈 Responsive Design**: Looks absolutely gorgeous on any device!
-- **💾 Local Storage**: Your progress is safely saved with magical localStorage powers
-
-## � Learning Curriculum (8 Weeks)
+## 📋 Learning Curriculum (8 Weeks)
 
 ### Week 1-2: Mathematical Foundations
 
@@ -93,7 +55,7 @@ Welcome to the most adorable quant learning experience ever created! 🎀 This m
 - **Build**: Vite for fast development
 - **Design**: Mobile-first responsive approach
 
-## � Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 
@@ -103,13 +65,13 @@ Welcome to the most adorable quant learning experience ever created! 🎀 This m
 ### Installation
 
 ```bash
-git clone github.com/depichan18/quant-roadmap/
+git clone https://github.com/depichan18/quant-roadmap.git
 cd quant-roadmap
 npm install
 npm run dev
 ```
 
-**Live Demo**: [click here](http://localhost:5174/)
+**Live Demo**: [http://localhost:5174/](http://localhost:5174/)
 
 ### Build for Production
 
@@ -117,30 +79,30 @@ npm run dev
 npm run build
 ```
 
-## 📖🎀 How to Use (Step by Step Cuteness!) 🎀📖
+## 📖 How to Use
 
-1. **� Explorer Menu**: Click the cute menu toggle in the top-right corner to access all features
-2. **�🌸 Track Daily Tasks**: Click on those adorable checkboxes to mark tasks as completed
+1. **🎮 Explorer Menu**: Click the menu toggle in the top-right corner to access all features
+2. **🌸 Track Daily Tasks**: Click on checkboxes to mark tasks as completed
 3. **📊 View Progress**: Watch your progress bloom in the header section with smooth animations
-4. **� Study Timer**: Use the kawaii Pomodoro timer for focused study sessions
-5. **📈 Statistics**: View your learning journey with cute analytics and motivational messages
-6. **📄 Export Data**: Save your progress in pretty formats (JSON, CSV, HTML)
+4. **🍅 Study Timer**: Use the Pomodoro timer for focused study sessions
+5. **📈 Statistics**: View your learning journey with analytics and motivational messages
+6. **📄 Export Data**: Save your progress in various formats (JSON, CSV, HTML)
 7. **❓ Help & Guide**: Access helpful information through the help modal
 8. **🔄 Reset Progress**: Start fresh anytime with a gentle reset
 
-## 🎨💖 Kawaii Features in Detail 💖🎨
+## 🎨 Feature Details
 
 ### 🌸 Progress Tracking
 
-- ✨ Real-time progress calculation with sparkles
-- 🎀 Adorable circular progress indicators in pastel colors
-- 📊 Week-by-week completion tracking with cute animations
-- 💕 Motivational kawaii messages based on your progress
+- ✨ Real-time progress calculation with visual feedback
+- 🎀 Circular progress indicators in pastel colors
+- 📊 Week-by-week completion tracking with smooth animations
+- 💕 Motivational messages based on your progress
 
-### � Explorer Menu System
+### 🎮 Explorer Menu System
 
 - 🍱 Clean minimalist toggle button with pink-600 text
-- 🌈 Soft blue-pink gradient backgrounds without white
+- 🌈 Soft blue-pink gradient backgrounds
 - 🎯 Quick access to all features: Statistics, Timer, Export, Help
 - 💫 Smooth animations and glass-morphism effects
 - 📱 Mobile-responsive with adaptive sizing
@@ -151,32 +113,41 @@ npm run build
 - 🛀 5-minute break periods (time to relax!)
 - 🎯 Visual countdown with beautiful circular progress
 - 🔔 Gentle desktop notifications when sessions complete
-- 🔄 Automatic session switching (so convenient!)
+- 🔄 Automatic session switching
 
 ### 📄 Export Options
 
-- **🌸 JSON**: Complete data export for backup (so organized!)
-- **📊 CSV**: Spreadsheet-friendly format (for the data lovers!)
-- **📋 Report**: Pretty HTML report for printing (share your journey!)
+- **🌸 JSON**: Complete data export for backup
+- **📊 CSV**: Spreadsheet-friendly format
+- **📋 Report**: Pretty HTML report for printing
 
 ### 📈 Statistics Dashboard
 
-- ✅ Total tasks completed (your achievements!)
-- 🏆 Weeks finished (milestone tracker!)
-- 📍 Current week indicator (where you are now!)
-- 📊 Average weekly progress (your consistency!)
-- 💖 Motivational kawaii feedback (you're doing great!)
+- ✅ Total tasks completed
+- 🏆 Weeks finished
+- 📍 Current week indicator
+- 📊 Average weekly progress
+- 💖 Motivational feedback
 
 ## 🖼️ Feature Previews
 
 ![Home Overview](Documentation/Home.png)
 _Main dashboard with progress tracking_
 
-![Progress Overview](Documentation/Overview.png)  
+![Progress Overview](Documentation/Overview.png)
 _Detailed analytics and completion tracking_
 
 ![Week Cards](Documentation/Card.png)
 _Interactive week cards with task management_
+
+![Daily Task](Documentation/DailyTask.png)
+_Daily task checklist interface_
+
+![Activities](Documentation/Activities.png)
+_Activity log and study timer_
+
+![Project](Documentation/Project.png)
+_Project and curriculum overview_
 
 ## 🔧 Customization
 
@@ -210,7 +181,7 @@ This project welcomes contributions! Feel free to:
 
 MIT License - Free to use and modify
 
-## 👩‍� About
+## 👩‍💻 About
 
 Created by **Depichan (Devi Rosa Aprilla)**, Mathematics student at Institut Teknologi Sepuluh Nopember (ITS).
 
@@ -218,4 +189,4 @@ _"Learning should be engaging, beautiful, and effective!"_
 
 ---
 
-**Start your quantitative research journey today!** �
+**Start your quantitative research journey today!** 🚀
